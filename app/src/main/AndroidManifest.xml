@@ -17,7 +17,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity">
+
+            <!--4.1之前的兼容-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+
+        </activity>
 
 
     </application>
